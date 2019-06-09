@@ -1,9 +1,9 @@
-= [nome da biblioteca] Library for Arduino =
+= JarvisPro Library for Arduino =
 
-[explicação da biblioteca com algumas observações sobre sua aplicação e uso]
+lib for integration Arduino and JarvisPro to control relay
 
 For more information about this library please visit us at
-[endereço público para acesso a biblioteca (url)]
+https://github.com/TVilella/JarvisPro
 
 == License ==
 

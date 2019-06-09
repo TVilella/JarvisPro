@@ -7,10 +7,13 @@
 
 JarvisPro::JarvisPro (byte qtdRele, bool ligar){
 	
+	
 	_qtdRele = qtdRele;
 	_ligar = ligar;
 	
-	for( byte nP = 0 ; np < _qtdRele ; np++){
+	if (_qtdRele > 18) _qtdRele = 18;
+	
+	for( byte nP = 0 ; nP < _qtdRele ; nP++){
 		
 		pinMode (portasRele[nP], OUTPUT);
 		
@@ -26,6 +29,7 @@ void JarvisPro::begin(){
 	delay(10);
 	
 	while(!Serial){
+		pinMode(13,OUTPUT);
 		
 		for (byte i=0; i<5 ; i++){
 			
@@ -124,3 +128,4 @@ void JarvisPro::loopRele(){
     }
     
   }
+}
